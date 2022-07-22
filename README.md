@@ -1,8 +1,5 @@
-<p align="center">
-  <p align="center">
-    <b>Melodia Protocol</b>
-  </p>
-</p>
+
+## Melodia Protocol
 
 <br/>
 <br/>
@@ -10,6 +7,11 @@
 Melodia is a decentralized music-sharing protocol, which provides a blockchain based solution to help artists publish and monitize music across the online community
 
 We are on a mission to give everyone the freedom to share and monetize music
+
+### How this works
+
+<img width="532" alt="image" src="https://user-images.githubusercontent.com/109826789/180567372-38220324-553f-4149-ae34-ad5ffd8886e8.png">
+
 
 ### Running a node
 
