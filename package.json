@@ -1,0 +1,13 @@
+{
+  "name": "melodia-protocol",
+  "description": "melodia is working to create a fully decentralized community of artists, developers, and listeners collaborating to share and defend the world’s music.",
+  "dependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melodia-protocol/melodia-protocol.git"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}
