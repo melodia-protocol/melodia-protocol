@@ -2,6 +2,8 @@
 
 set -e
 
+echo "pre-deploy"
+
 dbPath=$1
 if [ -z "$dbPath" ]; then
   echo "Usage: $0 <dbPath> <networkId>"
@@ -19,5 +21,6 @@ npx ganache --wallet.deterministic --wallet.totalAccounts 50 --database.dbPath "
 ganache_pid=$!
 
 npx truffle migrate --network predeploy
+npx truffle execute-transaction-local
 
 kill $ganache_pid
