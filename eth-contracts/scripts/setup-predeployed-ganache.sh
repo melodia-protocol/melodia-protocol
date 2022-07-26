@@ -10,6 +10,8 @@ if [ -z "$dbPath" ]; then
   exit 1
 fi
 
+echo "Creating db path"
+
 mkdir -p $dbPath
 npx ganache --wallet.deterministic --wallet.totalAccounts 50 --database.dbPath "$dbPath" --miner.blockTime 1 &
 ganache_pid=$!

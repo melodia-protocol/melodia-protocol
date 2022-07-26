@@ -20,6 +20,7 @@ export const strings = {
   third: web3New.utils.utf8ToHex("third"),
   test: web3New.utils.utf8ToHex("test"),
 };
+// DEAD
 export const addressZero = "0x0000000000000000000000000000000000000000";
 
 /** hex to utf8
@@ -63,6 +64,8 @@ export const parseTx = (txReceipt, multipleEvents = false) => {
       throw new Error("Missing event log in tx receipt");
     }
 
+    if (process.env == "TESTING") return;
+
     return {
       event: {
         name: txReceipt.logs[0].event,
@@ -92,8 +95,7 @@ export const assertThrows = async (
   // assert.fail() for some reason does not have its error string printed 🤷
   assert(
     false,
-    `Expected "${expectedErrorCode}"${
-      expectedReason ? ` (with reason: "${expectedReason}")` : ""
+    `Expected "${expectedErrorCode}"${expectedReason ? ` (with reason: "${expectedReason}")` : ""
     } but it did not fail`
   );
 };
