@@ -19,9 +19,9 @@ const claimsManagerProxyKey = web3.utils.utf8ToHex("ClaimsManagerProxy");
 const tokenRegKey = web3.utils.utf8ToHex("TokenKey");
 
 const DEFAULT_AMOUNT = _lib.audToWeiBN(120);
-const VOTING_PERIOD = 10;
+const VOTING_PERIOD = 1;
 const EXECUTION_DELAY = VOTING_PERIOD;
-const VOTING_QUORUM_PERCENT = 10;
+const VOTING_QUORUM_PERCENT = 5;
 
 const callValue0 = _lib.toBN(0);
 
