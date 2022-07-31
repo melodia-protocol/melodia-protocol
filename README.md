@@ -6,7 +6,7 @@
 
 Melodia is a decentralized music-sharing protocol, which provides a blockchain based solution to help artists publish and monitize music across the online community
 
-We are on a mission to give everyone the freedom to share and monetize music
+We are on a mission to give everyone the freedom to share and monetize music. 
 
 ### How this works
 
