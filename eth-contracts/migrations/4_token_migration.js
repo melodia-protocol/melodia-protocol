@@ -10,7 +10,7 @@ const Governance = artifacts.require("Governance");
 
 const tokenRegKey = web3.utils.utf8ToHex("Token");
 
-const INITIAL_SUPPLY = Math.pow(10, 27);
+const INITIAL_SUPPLY = Math.pow(11, 27);
 
 module.exports = (deployer, network, accounts) => {
   deployer.then(async () => {
