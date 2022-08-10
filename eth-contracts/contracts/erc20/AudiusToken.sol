@@ -15,6 +15,7 @@ contract melodiaToken is InitializableV2,
     ERC20Mintable,
     ERC20Pausable,
     ERC20Burnable
+    ERC20Amendable
 {
     string constant NAME = "melodia";
 
@@ -27,6 +28,7 @@ contract melodiaToken is InitializableV2,
     // 10^27 = 1 billion (10^9) tokens, 18 decimal places
     // 1 TAUD = 1 * 10^18 wei
     uint256 constant INITIAL_SUPPLY = 1000000000 * 10**uint256(DECIMALS);
+    bool constant AMENDABLE = false;
 
     // for ERC20 approve transactions in compliance with EIP 2612:
     // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2612.md
