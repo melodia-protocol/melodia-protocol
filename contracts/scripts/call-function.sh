@@ -8,3 +8,5 @@ set -e
 node_modules/.bin/truffle console <<EOF
   $1.deployed().then((instance) => instance.$2.call()).then((value) => console.log("Function returned: " + value))
 EOF
+
+echo "DEPLOY DONE"
